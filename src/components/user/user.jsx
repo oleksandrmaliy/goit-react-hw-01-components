@@ -1,7 +1,36 @@
 // import PropTypes from 'prop-types';
+import { UserCard, Info, Avatar, Username, Tag, Location, List, ListItem, Label, Value } from './user.styled';
 
-import user from '../data/user.json';
+export function Profile({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) {
+  return (
+    <UserCard>
+      <Info>
+        <Avatar src={avatar} alt="User avatar" />
+        <Username>{username}</Username>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
+      </Info>
 
-console.log(user);
-
-
+      <List>
+        <ListItem>
+          <Label>Followers</Label>
+          <Value>{followers}</Value>
+        </ListItem>
+        <ListItem>
+          <Label>Views</Label>
+          <Value>{views}</Value>
+        </ListItem>
+        <ListItem>
+          <Label>Likes</Label>
+          <Value>{likes}</Value>
+        </ListItem>
+      </List>
+    </UserCard>
+  );
+}
