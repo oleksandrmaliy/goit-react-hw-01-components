@@ -11,7 +11,7 @@ import {
   ListItem,
   Label,
   Value,
-} from './user.styled';
+} from './User.styled';
 
 export function Profile({
   username,
@@ -52,7 +52,4 @@ Profile.propTypes = {
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
   stats: PropTypes.objectOf(PropTypes.number).isRequired,
-  followers: PropTypes.number.isRequired,
-  views: PropTypes.number.isRequired,
-  likes: PropTypes.number.isRequired,
 };
