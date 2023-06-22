@@ -17,6 +17,7 @@ export const App = () => {
       <Title>Task 2:</Title>
       <Title>Task 3:</Title>
       <Title>Task 4:</Title>
+      <Title>Game Over!</Title>
     </>
   );
 };

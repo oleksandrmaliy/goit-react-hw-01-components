@@ -1,5 +1,17 @@
-// import PropTypes from 'prop-types';
-import { UserCard, Info, Avatar, Username, Tag, Location, List, ListItem, Label, Value } from './user.styled';
+import PropTypes from 'prop-types';
+
+import {
+  UserCard,
+  Info,
+  Avatar,
+  Username,
+  Tag,
+  Location,
+  List,
+  ListItem,
+  Label,
+  Value,
+} from './user.styled';
 
 export function Profile({
   username,
@@ -16,7 +28,6 @@ export function Profile({
         <Tag>@{tag}</Tag>
         <Location>{location}</Location>
       </Info>
-
       <List>
         <ListItem>
           <Label>Followers</Label>
@@ -34,3 +45,14 @@ export function Profile({
     </UserCard>
   );
 }
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
+};
