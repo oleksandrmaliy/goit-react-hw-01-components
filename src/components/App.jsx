@@ -1,7 +1,7 @@
 import user from './data/user.json';
 import data from './data/data.json';
 
-import { Title } from './Title/Title.styled';
+import { Titles } from './Titles/Titles.styled';
 import { Profile } from './User/User';
 import { Statistics } from './Statistics/Statistics';
 
@@ -10,7 +10,7 @@ console.log(data);
 export const App = () => {
   return (
     <>
-      <Title>Task 1:</Title>
+      <Titles>Task 1:</Titles>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -18,11 +18,11 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Title>Task 2:</Title>
+      <Titles>Task 2:</Titles>
       <Statistics title="Upload stats" stats={data} />
-      <Title>Task 3:</Title>
-      <Title>Task 4:</Title>
-      <Title>Game Over!</Title>
+      <Titles>Task 3:</Titles>
+      <Titles>Task 4:</Titles>
+      <Titles>Game Over!</Titles>
     </>
   );
 };
