@@ -2,7 +2,7 @@ import user from './data/user.json';
 import data from './data/data.json';
 
 import { Titles } from './Titles/Titles.styled';
-import { Profile } from './User/User';
+import { Profile } from './Profile/User';
 import { Statistics } from './Statistics/Statistics';
 
 console.log(data);
