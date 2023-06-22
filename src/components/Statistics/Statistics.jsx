@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatSection, Title } from './Statistics.styled';
-// import data from '../data/data.json';
-// console.log(data);
+
 
 export function Statistics({ title, stats }) {
   return (
