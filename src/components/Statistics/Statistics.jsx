@@ -3,17 +3,17 @@ import { randomColor } from '../Functions/getRandomHexColor';
 
 import {
   StatSection,
-  Title,
+  StatTitle,
   StatList,
   StatItem,
   StatLabel,
-  Value,
+  StatValue,
 } from './Statistics.styled';
 
 export function Statistics({ title, stats }) {
   return (
     <StatSection>
-      {title && <Title>{title}</Title>}
+      {title && <StatTitle>{title}</StatTitle>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => {
@@ -25,7 +25,7 @@ export function Statistics({ title, stats }) {
               }}
             >
               <StatLabel>{label}</StatLabel>
-              <Value>{percentage}</Value>
+              <StatValue>{percentage}</StatValue>
             </StatItem>
           );
         })}
@@ -36,4 +36,11 @@ export function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
 };

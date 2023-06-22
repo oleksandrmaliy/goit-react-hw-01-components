@@ -8,7 +8,7 @@ export const StatSection = styled.section`
   border: 1px solid grey;
 `;
 
-export const Title = styled.h2`
+export const StatTitle = styled.h2`
   text-align: center;
   margin: 15px auto;
   font-size: 45px;
@@ -41,7 +41,7 @@ export const StatLabel = styled.span`
   font-weight: 400;
 `;
 
-export const Value = styled.span`
+export const StatValue = styled.span`
   font-size: 30px;
   font-weight: 700;
 `;
