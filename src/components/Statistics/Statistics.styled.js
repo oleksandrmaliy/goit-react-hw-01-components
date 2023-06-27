@@ -1,47 +1,27 @@
 import styled from 'styled-components';
 
-export const StatSection = styled.section`
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 600px;
-  border: 1px solid grey;
+export const Title = styled.h2`
+  font-weight: 500;
 `;
 
-export const StatTitle = styled.h2`
-  text-align: center;
-  margin: 15px auto;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 1.15;
-`;
-
-export const StatList = styled.ul`
-  list-style-type: none;
+export const List = styled.ul`
+  font-weight: 500;
   display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  margin: 0;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.15;
 `;
 
-export const StatItem = styled.li`
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: calc(100% / 3);
-  text-align: center;
-  color: white;
- `;
-
-export const StatLabel = styled.span`
-  display: block;
-  font-size: 24px;
+export const Item = styled.li`
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 10px 15px;
+  width: calc((100% - 20px)/ 5);
 `;
 
-export const StatValue = styled.span`
-  font-size: 30px;
-  font-weight: 700;
+export const StatisticsSection = styled.section`
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px auto;
+  width: 500px;
+  background-color: white;
 `;

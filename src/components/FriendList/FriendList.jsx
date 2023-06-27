@@ -1,13 +1,11 @@
-// import PropTypes from 'prop-types';
-// import { FriendListItem } from '../FrendListItem/FriendListItem';
-// import {} from './FriendList.styled';
+import PropTypes from 'prop-types';
+import { FriendListItem } from '../FriendListItem/FriendListItem';
+import { List } from './FriendList.styled';
 
 export function FriendList({ friends }) {
   return (
-    <FriendList>
-        zzz
-        
-      {/* {friends.map(({ avatar, name, isOnline }) => {
+    <List>
+      {friends.map(({ avatar, name, isOnline }) => {
         return (
           <FriendListItem
             key={name}
@@ -16,11 +14,11 @@ export function FriendList({ friends }) {
             status={isOnline}
           />
         );
-      })} */}
-    </FriendList>
+      })}
+    </List>
   );
 }
 
-  // FriendList.propTypes = {
-  //   friends: PropTypes.array.isRequired,
-  // };
+FriendList.propTypes = {
+  friends: PropTypes.array.isRequired,
+};
