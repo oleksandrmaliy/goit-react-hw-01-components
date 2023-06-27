@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 // import { FriendListItem } from '../FrendListItem/FriendListItem';
 // import {} from './FriendList.styled';
 
@@ -21,6 +21,6 @@ export function FriendList({ friends }) {
   );
 }
 
-  FriendList.propTypes = {
-    friends: PropTypes.array.isRequired,
-  };
+  // FriendList.propTypes = {
+  //   friends: PropTypes.array.isRequired,
+  // };

@@ -5,7 +5,7 @@ import friends from './data/friends.json';
 import { Titles } from './Titles/Titles.styled';
 import { Profile } from './Profile/User';
 import { Statistics } from './Statistics/Statistics';
-// import { FriendList } from './FriendList/FriendList';
+import { FriendList } from './FriendList/FriendList';
 
 console.log(friends);
 
@@ -23,7 +23,7 @@ export const App = () => {
       <Titles>Task 2:</Titles>
       <Statistics title="Upload stats" stats={data} />
       <Titles>Task 3:</Titles>
-      {/* <FriendList friends={friends}/> */}
+      <FriendList/>
       <Titles>Task 4:</Titles>
       <Titles>Game Over!</Titles>
     </>
