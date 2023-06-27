@@ -14,6 +14,7 @@ export const Item = styled.li`
   display: flex;
   flex-direction: column;
   background-color: lightgray;
+  border: 1px solid white;
   padding: 10px 15px;
   width: calc((100% - 20px)/ 5);
 `;
