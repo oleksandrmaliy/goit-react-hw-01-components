@@ -23,7 +23,7 @@ export const App = () => {
       <Titles>Task 2:</Titles>
       <Statistics title="Upload stats" stats={data} />
       <Titles>Task 3:</Titles>
-      <FriendList/>
+      <FriendList friends = {friends}/>
       <Titles>Task 4:</Titles>
       <Titles>Game Over!</Titles>
     </>
